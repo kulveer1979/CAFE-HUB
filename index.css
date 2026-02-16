@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 10px;
+}
+.header{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:lavender;
+    align-items: center;
+}
+.heading-title{
+    font-size: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(58, 1, 1);
+    font-weight: 600;
+    padding: 10px;
+}
+.Navigation-section{
+   
+}
+.Nav-unorder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Nav-unorder > li{
+    list-style: none;
+}
+.nav-Register-btn{
+    padding: 11px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 3px solid black;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 110px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.search-section{
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+        font-size: 25px;
+
+    border: 3px solid black;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+.banner-section{
+    font-size: 20px;
+    margin: 50px;
+    width: 700px;
+    color: rgb(39, 2, 2);
+   
+    padding: 35px;
+}
+.banner-heading-1 , .banner-heading-2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:brown;
+    font-size: 75px;
+
+    
+}
+.banner-para{
+    font-size: 25px;
+    color: brown;
+
+    
+} 
+
+.banner-coffee-img{
+    padding: 50px;
+    
+}
+.banner-coffee{
+    width: 600px;
+}
+.banner-container{
+    /* margin: 10px 50px; */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.banner-container-2{
+    /* margin: 10px 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   /* background-color: rgba(219, 124, 0, 0.582); */
+}
+.banner-heading-12{
+    font-size: 75px;
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border: 2px solid black ; */
+    padding-left: 210px;
+}
+
+.banner-para-2{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 25px;
+    color: brown;
+   
+    padding: 20px;
+    padding-left: 60px;
+
+}.banner-caption-img{
+    padding: 30px;
+}
+.banner-heading-13{
+    font-size: 75px;
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50px;
+  
+
+}
+.banner-para-3{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 25px;
+    color: brown;
+    /* border: 2px solid black; */
+    padding: 20px;
+    padding-left: 60px;
+}
+
+.banner-intro-img{
+    padding: 50px;
+    
+    /* border: 2px solid black; */
+    
+}
+.banner-container-3{
+    /* margin: 10px 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    background-color: antiquewhite;
+
+
+}
+
+.banner-container-4{
+    /* margin: 10px 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* background-color: rgba(235, 168, 80, 0.582); */
+}
+.banner-matcha-img{
+    /* border: 2px solid black; */
+    padding: 50px;
+}
+
+.banner-heading-14{
+    font-size: 75px;
+    color: rgb(41, 121, 3);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50px;
+
+}   
+.banner-para-4{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 25px;
+    color: brown;
+    /* border: 2px solid black; */
+    padding: 20px;
+    padding-left: 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(206, 117, 1);
+}
+.banner-coffee{
+    border-radius: 70px;
+}
+.banner-container-5{
+     /* margin: 10px 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* background-color: rgba(235, 168, 80, 0.582); */
+}
+
+.banner-para-5{
+     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 25px;
+    color: brown;
+    border: 2px solid black;
+    padding: 20px;
+    padding-left: 60px;
+
+}
+
+.banner-heading-15{
+     font-size: 75px;
+    color: rgb(73, 45, 2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50px;
+    border: 2px solid black;
+
+}
+.banner-Mocktails-img{
+    border: 2px solid black;
+    padding: 50px;
+    border-radius: 30px;
+    
+   
+
+}
+
+
+.footer{
+    font-size: 40px;
+    text-align: center;
+    /* border: 2px solid black; */
+    padding: 30px;
+    background-color: rgba(247, 151, 151, 0.473);
+
+}
