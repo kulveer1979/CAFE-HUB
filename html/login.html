@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | Roasted Bean Co.</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo"><i class="fas fa-coffee"></i> CAFE-HUB</div>
+    <nav>
+        <a href="#">Shop</a>
+        <a href="#">Subscriptions</a>
+        <a href="#" class="logout-link">Logout</a>
+    </nav>
+</header>
+
+<div class="account-container">
+    <aside class="account-sidebar">
+        <div class="user-welcome">
+            <img src="https://ui-avatars.com/api/?name=Coffee+User&background=bc6c25&color=fff" alt="Avatar" class="avatar">
+            <p>Welcome back, <strong>Coffee Lover</strong></p>
+        </div>
+        <nav class="side-nav">
+            <button class="nav-btn active" onclick="openTab(event, 'profile')">
+                <i class="fas fa-user-circle"></i> Profile Details
+            </button>
+            <button class="nav-btn" onclick="openTab(event, 'orders')">
+                <i class="fas fa-box-open"></i> Order History
+            </button>
+            <button class="nav-btn" onclick="openTab(event, 'wishlist')">
+                <i class="fas fa-heart"></i> My Wishlist
+            </button>
+        </nav>
+    </aside>
+
+    <main class="account-main">
+        
+        <section id="profile" class="tab-panel active">
+            <h2>Profile Settings</h2>
+            <form class="account-form">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" value="Coffee Lover">
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" value="lover@coffee-co.com">
+                </div>
+                <div class="input-group">
+                    <label>Default Shipping Address</label>
+                    <textarea rows="3">123 Espresso Way, Brewtown, CA 90210</textarea>
+                </div>
+                <button type="submit" class="btn-primary">Save Changes</button>
+            </form>
+        </section>
+
+        <section id="orders" class="tab-panel">
+            <h2>Recent Orders</h2>
+            <div class="table-wrapper">
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>Order #</th>
+                            <th>Date</th>
+                            <th>Items</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#7721</td>
+                            <td>Feb 01, 2026</td>
+                            <td>Dark Roast (2lb)</td>
+                            <td><span class="badge shipped">Shipped</span></td>
+                        </tr>
+                        <tr>
+                            <td>#7690</td>
+                            <td>Jan 15, 2026</td>
+                            <td>Arabica Blend</td>
+                            <td><span class="badge delivered">Delivered</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="wishlist" class="tab-panel">
+            <h2>Your Favorites</h2>
+            <p>You haven't added any favorite blends yet. <a href="#">Browse Coffee</a></p>
+        </section>
+
+    </main>
+</div>
+
+<script>
+    function openTab(evt, tabId) {
+        // Hide all panels
+        const panels = document.querySelectorAll('.tab-panel');
+        panels.forEach(p => p.classList.remove('active'));
+
+        // Deactivate all buttons
+        const buttons = document.querySelectorAll('.nav-btn');
+        buttons.forEach(b => b.classList.remove('active'));
+
+        // Show selected panel and activate button
+        document.getElementById(tabId).classList.add('active');
+        evt.currentTarget.classList.add('active');
+    }
+</script>
+
+<button class="register-btn"><a href="register.html">Register</a></button>
+
+
+</body>
+</html>

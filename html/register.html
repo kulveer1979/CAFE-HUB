@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE-HUB</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-nav">
+    <div class="logo">CAFE-HUB</div>
+    <nav>
+        <a href="#">Beans</a>
+        <a href="#">Brew Guides</a>
+        <a href="#" class="active-link">Account</a>
+    </nav>
+</header>
+
+<div class="account-wrapper">
+    <aside class="sidebar">
+        <div class="profile-header">
+            <div class="user-icon"><i class="fas fa-user"></i></div>
+            <h4>Username</h4>
+            <p>year</p>
+        </div>
+        
+        <nav class="tab-controls">
+            <button class="tab-btn active" onclick="showTab('dashboard')">
+                <i class="fas fa-th-large"></i> Dashboard
+            </button>
+            <button class="tab-btn" onclick="showTab('orders')">
+                <i class="fas fa-shopping-cart"></i> Recent Orders
+            </button>
+            <button class="tab-btn" onclick="showTab('settings')">
+                <i class="fas fa-user-edit"></i> Profile Settings
+            </button>
+        </nav>
+    </aside>
+
+    <main class="content-area">
+        
+        <section id="dashboard" class="tab-content active">
+            <h2>Welcome Back!</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h5>Loyalty Points</h5>
+                    <p class="value">0<i class="fas fa-seedling"></i></p>
+                </div>
+                <div class="stat-card">
+                    <h5>Last Order</h5>
+                    <p class="value">0 days ago</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="orders" class="tab-content">
+            <h2>Order History</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td><span class="status-pill shipped">notdeliverd</span></td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td><span class="status-pill delivered">notdeliverd</span></td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="settings" class="tab-content">
+            <h2>Profile Settings</h2>
+            <form class="profile-form">
+                <label>Email Address</label>
+                <input type="email" value="@example.com">
+                
+                <label>Shipping Address</label>
+                <textarea rows="4">123 Espresso Lane, Roast City, 90210</textarea>
+                
+                <button type="submit" class="save-btn">Update Details</button>
+            </form>
+        </section>
+
+    </main>
+</div>
+
+<script>
+    function showTab(tabId) {
+        // Hide all tabs
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        
+        // Remove active class from buttons
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        // Show selected tab
+        document.getElementById(tabId).classList.add('active');
+        
+        // Find the clicked button and make it active
+        const clickedBtn = Array.from(document.querySelectorAll('.tab-btn'))
+            .find(btn => btn.getAttribute('onclick').includes(tabId));
+        clickedBtn.classList.add('active');
+    }
+</script>
+
+<button class="login-button"><a href="login.html">Login User</a></button>
+
+</body>
+</html>

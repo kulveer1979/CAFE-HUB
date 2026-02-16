@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Cafe-Hub</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="cart-container">
+    <header class="cart-title">
+        <h1>Shopping Cart</h1>
+        <p>3 items in your cart</p>
+    </header>
+
+    <div class="cart-table">
+        <div class="table-header">
+            <div class="col-product">Product</div>
+            <div class="col-price">Price</div>
+            <div class="col-quantity">Quantity</div>
+            <div class="col-actions"></div>
+        </div>
+
+        <div class="product-row">
+            <div class="col-product">
+                <div class="product-box">
+                    <img src="https://via.placeholder.com/250x250/7eb4f7/ffffff?text=250+x+250" alt="Product">
+                    <div class="product-info">
+                        <h3>Product Name</h3>
+                        <p>Brand & Name</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-price">$49.00</div>
+            <div class="col-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="col-actions">
+                <button class="action-btn"><i class="fas fa-sync-alt"></i></button>
+                <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+
+        <div class="product-row">
+            <div class="col-product">
+                <div class="product-box">
+                    <img src="https://via.placeholder.com/250x250/7eb4f7/ffffff?text=250+x+250" alt="Product">
+                    <div class="product-info">
+                        <h3>Product Name</h3>
+                        <p>Brand & Name</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-price">$49.00</div>
+            <div class="col-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="col-actions">
+                <button class="action-btn"><i class="fas fa-sync-alt"></i></button>
+                <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+
+        <div class="product-row">
+            <div class="col-product">
+                <div class="product-box">
+                    <img src="https://via.placeholder.com/250x250/7eb4f7/ffffff?text=250+x+250" alt="Product">
+                    <div class="product-info">
+                        <h3>Product Name</h3>
+                        <p>Brand & Name</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-price">$49.00</div>
+            <div class="col-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="col-actions">
+                <button class="action-btn"><i class="fas fa-sync-alt"></i></button>
+                <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cart-footer">
+        <div class="continue-shopping">
+            <a href="#"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+        </div>
+        <div class="checkout-section">
+            <div class="subtotal">
+                <p>Subtotal:</p>
+                <h2>$99.00</h2>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

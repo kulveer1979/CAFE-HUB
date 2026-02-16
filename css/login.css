@@ -1,0 +1,242 @@
+/* Color Palette */
+:root {
+    --primary-brown: #3d2b1f;
+    --accent-gold: #bc6c25;
+    --bg-cream: #fdfaf7;
+    --white: #ffffff;
+    --text-dark: #2d2d2d;
+    --border-light: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Header */
+.navbar {
+    background-color: var(--primary-brown);
+    color: var(--white);
+    padding: 1.2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.navbar nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+/* Layout Container */
+.account-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Sidebar */
+.account-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+}
+
+.user-welcome {
+    text-align: center;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.avatar {
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-btn {
+    background: var(--white);
+    border: none;
+    padding: 15px 20px;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: all 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.nav-btn i {
+    margin-right: 10px;
+    color: var(--accent-gold);
+}
+
+.nav-btn.active, .nav-btn:hover {
+    background: var(--accent-gold);
+    color: white;
+}
+
+.nav-btn.active i {
+    color: white;
+}
+
+/* Main Content Area */
+.account-main {
+    flex-grow: 1;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 35px;
+    min-height: 400px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Forms */
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: var(--primary-brown);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Tables */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-table th {
+    background: #f8f9fa;
+    text-align: left;
+    padding: 15px;
+}
+
+.order-table td {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.shipped { background: #fff3cd; color: #856404; }
+.delivered { background: #d4edda; color: #155724; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .account-container {
+        flex-direction: column;
+    }
+    .account-sidebar {
+        width: 100%;
+    }
+}
+
+.register-btn{
+    
+    /* Colors & Typography */
+    background-color: #3d2b1f; /* Deep Espresso */
+    color: #f5ebe0;            /* Light Cream text */
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+
+    /* Shape & Border */
+    padding: 12px 28px;
+    border: 2px solid #a3470a;
+    border-radius: 30px;      /* Rounded pill shape */
+    
+    /* Effects */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+/* Hover State: The "Latte" Effect */
+.register-btn:hover {
+    background-color: #bc6c25; /* Warm Roasted Brown */
+    border-color: #bc6c25;
+    color: #ffffff;
+    transform: translateY(-2px); /* Slight lift */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Click Effect */
+.register-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,143 @@
+/* General Setup */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+}
+
+.cart-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
+.cart-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cart-title h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.cart-title p {
+    color: #5bc0de;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Table Logic */
+.table-header {
+    display: flex;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.product-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 20px 0;
+}
+
+/* Column Widths */
+.col-product { flex: 4; }
+.col-price { flex: 1; text-align: right; padding-right: 40px;}
+.col-quantity { flex: 1; text-align: center; }
+.col-actions { flex: 1; text-align: right; }
+
+/* Product Details */
+.product-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-info h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.product-info p {
+    color: #888;
+    margin: 5px 0 0;
+}
+
+/* Controls */
+input[type="number"] {
+    width: 60px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.action-btn {
+    background: white;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.action-btn:hover { background: #f9f9f9; }
+
+/* Footer Summary */
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.continue-shopping a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.checkout-section {
+    text-align: right;
+}
+
+.subtotal p {
+    color: #444;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.subtotal h2 {
+    margin: 5px 0 20px;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.checkout-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
