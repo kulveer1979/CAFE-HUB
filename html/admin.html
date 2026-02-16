@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nogops Dashboard</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">N</div>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">Shoping</a>
+                <a href="#">Order List</a>
+                <a href="#">Favorite</a>
+                <a href="#">Payment</a>
+                <a href="#">Settings</a>
+            </nav>
+            <div class="logout">Log Out</div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div class="welcome">
+                    <h1>Welcome to Nogops</h1>
+                    <p>Choose The Category</p>
+                </div>
+                <input type="text" placeholder="Search something..." class="search-bar">
+                <div class="user-profile">
+                    <span class="user-info"><b>Admin</b><br>Sheilla Poetri</span>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="card stat-card">
+                    <p>Total Order</p>
+                    <h2>21,375</h2>
+                    <span class="trend negative">-2.33%</span>
+                </div>
+                <div class="card stat-card">
+                    <p>New Customer</p>
+                    <h2>1,012</h2>
+                    <span class="trend positive">+32.40%</span>
+                </div>
+                <div class="card stat-card">
+                    <p>Total Sales</p>
+                    <h2>$24,254</h2>
+                    <span class="trend positive">+25%</span>
+                </div>
+            </section>
+
+            <section class="middle-grid">
+                <div class="card analytics">
+                    <h3>Sales Analytics</h3>
+                    <div class="chart-placeholder">Chart Area (Use Chart.js here)</div>
+                </div>
+                <div class="card trending">
+                    <h3>Trending Coffee</h3>
+                    <ul>
+                        <li><span>Cappuccino</span> <span>240</span></li>
+                        <li><span>Latte</span> <span>220</span></li>
+                        <li><span>Mocha</span> <span>100</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="card recent-orders">
+                <h3>Recent Order</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>Date & Time</th>
+                            <th>Price</th>
+                            <th>Payment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cappuccino</td>
+                            <td>27 Oct 2023, 01:05 PM</td>
+                            <td>$200</td>
+                            <td>Cash</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
