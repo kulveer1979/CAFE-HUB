@@ -1,0 +1,79 @@
+.coffee-heading{
+    font-size: 50px;
+    border: 2px solid black;
+    padding-left: 50px;
+    background-color: bisque;
+    color: rgb(82, 5, 5);
+}
+
+
+
+.card-section{
+    display: flex;
+    
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+
+}
+
+
+.card-container{
+    width: 250px;
+    height: 500px;
+    border: 9px solid black;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px ;
+
+}
+.card-img{
+    width: 250px;
+    border-radius: 20px;
+    margin: 0px;
+    border: 2px solid black;
+    
+    
+
+}
+.card-title{
+    font-size: 30px;
+    margin: 0px;
+    
+}
+.card-descryption{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0px;
+}
+.card-quantity{
+    font-size: 10px;
+    margin: 0px;
+}
+.card-price{
+    font-size: 26px;
+    margin: 0px;
+}
+.card_button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 22px;
+    
+}
+.card_button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 157, 19, 0.911);
+    transition: 0.3s ease-in-out 0.5s;
+    transform: translateY(-3px);
+}
+.card-img-hazlenut{
+    border-radius: 40px;
+    height: 220px;
+
+}
+
+

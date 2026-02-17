@@ -58,3 +58,11 @@ body{
     color: rgb(114, 36, 5);
 }
 
+.about-img{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+
+}
+
+
